@@ -21,6 +21,7 @@ IVPN Client app is distributed on the official site [www.ivpn.net](https://www.i
     * [Windows](#compilation_windows)
     * [macOS](#compilation_macos)
     * [Linux](#compilation_linux)
+* [AntiTracker Documentation](#antitracker)
 * [Versioning](#versioning)
 * [Contributing](#contributing)
 * [Security Policy](#security)
@@ -142,6 +143,22 @@ Graphical User Interface *(UI)*:
 
 Compiled DEB/RPM packages can be found at `ui/References/Linux/_out_bin`  
 *Note: It is required to have installed IVPN Daemon before running IVPN UI.*  
+
+<a name="antitracker"></a>
+
+## AntiTracker Documentation
+
+IVPN's **AntiTracker** feature blocks ads, malicious websites, and third-party trackers using DNS-based filtering. For developers looking to understand or modify this functionality:
+
+* **[AntiTracker Architecture](docs/ANTITRACKER_ARCHITECTURE.md)** - Comprehensive guide explaining how AntiTracker works, the client-server architecture, and implementation details.
+* **[AntiTracker Files Reference](docs/ANTITRACKER_FILES_REFERENCE.md)** - Quick reference guide with file locations, code snippets, and common development tasks.
+
+**Key Points:**
+- AntiTracker uses DNS-based blocking via IVPN's private DNS servers
+- This repository contains the **client-side configuration UI** and **DNS routing logic**
+- The actual **blocking lists and filtering logic** run on **IVPN's cloud infrastructure** (not in this repo)
+- Multiple block lists are available: Basic, Comprehensive, Restrictive, and various third-party lists
+- Hardcore Mode adds additional blocking for surveillance-based companies (Google, Facebook)
 
 <a name="versioning"></a>
 
