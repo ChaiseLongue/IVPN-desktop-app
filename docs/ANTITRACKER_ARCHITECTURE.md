@@ -15,6 +15,8 @@ The blocking lists and filtering logic reside on IVPN's infrastructure, not in t
 
 ## Architecture
 
+For detailed visual diagrams, see [ANTITRACKER_DIAGRAMS.md](./ANTITRACKER_DIAGRAMS.md).
+
 ```
 [Desktop App Client] --> [IVPN VPN Tunnel] --> [IVPN AntiTracker DNS Server (Cloud)]
                                                         |
@@ -287,6 +289,11 @@ ivpn status
 
 ## Related Documentation
 
+**In This Repository:**
+- [ANTITRACKER_FILES_REFERENCE.md](./ANTITRACKER_FILES_REFERENCE.md) - Quick file reference and development guide
+- [ANTITRACKER_DIAGRAMS.md](./ANTITRACKER_DIAGRAMS.md) - Visual diagrams and architecture
+
+**Official IVPN Documentation:**
 - [IVPN AntiTracker](https://www.ivpn.net/antitracker)
 - [AntiTracker Hardcore Mode FAQ](https://www.ivpn.net/antitracker/hardcore)  
 - [AntiTracker Plus Lists Explained](https://www.ivpn.net/knowledgebase/general/antitracker-plus-lists-explained/)
